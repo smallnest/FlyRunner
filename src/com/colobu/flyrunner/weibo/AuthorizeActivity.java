@@ -49,9 +49,9 @@ public class AuthorizeActivity extends Activity {
 
 	
 	// 设置appkey及appsecret，如何获取新浪微博appkey和appsecret请另外查询相关信息，此处不作介绍
-	private static final String CONSUMER_KEY = "3160370052";// 替换为开发者的appkey，例如"1646212960";
-	private static final String CONSUMER_SECRET = "6bd033cc57af80dce4d4a87f725257d3";// 替换为开发者的appkey，例如"94098772160b6f8ffc1315374d8861f9";
-	
+	private static final String CONSUMER_KEY = "1234567890";// 替换为开发者的appkey，例如"1646212960";
+	private static final String CONSUMER_SECRET = "12345dfdsfdsf43124fdvfd234343233";// 替换为开发者的appkey，例如"94098772160b6f8ffc1315374d8861f9";
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
