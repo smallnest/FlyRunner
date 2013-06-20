@@ -30,7 +30,7 @@
 
 注意：当前的百度地图仅支持旧版格式的离线地图。
 
-![](assets\help\images\gui1.jpg)![](assets\help\images\gui2.jpg)![](assets\help\images\gui3.jpg)![](assets\help\images\gui4.jpg)
+![](assets/help/images/gui1.jpg)![](assets/help/images/gui2.jpg)![](assets/help/images/gui3.jpg)![](assets/help/images/gui4.jpg)
 
 ## **安装方法** ##
 
