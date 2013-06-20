@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, height=device-height,initial-scale=1,user-scalable=no,target-densityDpi=device-dpi">
+    <title>跑酷健身帮助文档</title>
+    <style type="text/css">
+        a {color:#193E5C;}
+        body {text-align: center;font-family: sans-serif;background: #D2D8DE;padding: 0px; font-size:14px;}
+        .container {margin: 0 auto; text-align: left; background: #FFF;}
+        .hd {padding:10px;background: #193E5C;text-align: center;color:#FFF;font-size:26px;}
+        .hd h1 {font-size: 36px;}
+        .hd a {color:#FFA;}
+        .bd {padding: 25px;}
+        td,th {padding: 3px;}
+        td {border: 1px solid #D2D8DE;}
+        th {background: #D2D8DE;}
+        pre {background: #F2F8FE;padding: 20px;}
+        .bd h1 {font-size:30px;border-bottom: 2px solid #D2D8DE; padding: 10px; color:#193E5C;}
+        .bd h2 {font-size:24px;background: #E2E8EE;padding: 10px; color:#193E5C;}
+        .bd h3 {font-size:20px;background: #F2F8FE;padding: 8px; color:#193E5C;}
+        .bd h4 {font-size:18px; color:#193E5C;}
+        .ft {padding: 20px;text-align: center;background: #E2E8EE;}
+        em {color:#008b8b;}
+		ol p {font: normal .8em Arial, Helvetica, sans-serif;	color: #000000;}
+    </style>
+</head>
+<body>
+<div class="container">
+<div class="hd">
+    <h1>帮助文档</h1>
+</div>
+<div class="bd">
+<h1>功能介绍</h1>
+
+<p>跑酷健身是一款完全免费的跑步健身软件。它通过GPS导航定位，可以实时的通过地图跟踪您的跑步路线，智能计算你的步伐速度，保存跑步记录并且可以随时调阅且在地图上展示出来。</p>
+<p>支持离线地图的模式，轻松帮助你节省流量。</p>
+<p>支持多种跑步方式，可以所以跑步，也可是设定跑步长度或者跑步时间，一切尽在您的计划中。</p>
+
+<!--
+<pre><code>
+</code></pre>
+-->
+
+<h2>离线地图</h2>
+
+<p>跑酷健身软件采用百度地图显示跑步路线。</p>
+<p>百度地图支持离线模式，可以为您节省大量的流量。</p>
+<p>百度地图为国内用户提供了最新的离线地图，并且无需联网您也能使用地图浏览。不必担心地图服务商服务的稳定性</p>
+<p>地图文件较大，建议您在wifi或者PC上下载百度地图，然后复制到手机的存储卡中。</p>
+<p>请到百度官方网站<a href="http://shouji.baidu.com/map/map.html" target="_blank">http://shouji.baidu.com/map/map.html</a>下载地图</p>
+<p>选择相应的手机类型和城市进行下载</p>
+<p>注意：当前的百度地图仅支持旧版格式的离线地图。<image src="images/offline_download.jpg"></p>
+
+<h3>安装方法</h3>
+<ol>
+	<li>
+		<p>解开下载的地图文件，可以看到BaiduMap文件夹。</p>
+		<image src="images/baidumap.jpg">
+	</li>
+	<li>
+		<p>进入此文件夹，可以看到Mapdata文件夹。</p>
+		<image src="images/metadata.jpg">
+	</li>
+	<li>
+		<p>将Mapdata文件夹复制到手机存储卡的BaiduSDK文件夹中。</p>
+		<image src="images/baidumapsdk.jpg">
+	</li>
+	<li>
+		<p>打开跑酷健身软件，选择离线地图页面，可以看到刚刚下载的离线地图。</p>
+	</li>
+</ol>
+
+<h2>软件设置</h2>
+
+<p>在软件设置页面，您可以设置软件是否会自动检查更新。</p>
+<p>你还可以GPS参数设置。</p>
+
+
+<table>
+    <thead>
+    <tr>
+        <th>设置参数</th>
+        <th>说明</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>检查更新</td>
+        <td>允许程序检查新版本。当有新版本发布时，提示更新新版本</td>
+    </tr>
+    <tr>
+        <td>GPS精准度控制</td>
+        <td>允许程序根据GPS信号和速度剔除误差比较大的数据</td>
+    </tr>
+    <tr>
+        <td>最大允许精度</td>
+        <td>从GPS得到的数据的精度如果大于此值，数据会被丢弃</td>
+    </tr>
+    <tr>
+        <td>最大允许速度</td>
+        <td>根据GPS得到的当前点的速度，如果速度大于此值，数据将被丢弃</td>
+    </tr>
+    <tr>
+        <td>位置监测间隔</td>
+        <td>获取两点之间的时间间隔。建议此值不要太短，太短GPS数据不准确，也不宜太长，太长时跑步细节容易被忽略</td>
+    </tr>
+    </tbody>
+</table>
+
+<h2>校正地图</h2>
+
+<p>当前百度地图和GPS数据可能会有些不一致。</p>
+<p>需要您通过校正地图的功能进行较正。</p>
+<h3>校正方法</h3>
+<ol>
+	<li>
+		<p>在主菜单页面点击"校正位置"。</p>
+	</li>
+	<li>
+		<p>第一次进入可能GPS需要搜星，此过程较长，请耐心等待</p>
+	</li>
+	<li>
+		<p>软件获得GPS数据后会在地图上描绘一个红点。</p>
+	</li>
+	<li>
+		<p>在地图上点击您当前的实际位置，软件会在您的点击处描绘一个绿点。</p>
+	</li>
+	<li>
+		<p>点击左上角的校正按钮，校正参数会被保存下来。返回主菜单选择其它的功能</p>
+	</li>
+</ol>
+
+
+<h1>开始跑步</h1>
+
+<p>跑酷健身提供了三种跑步类型</p>
+
+<h2>随意跑</h2>
+
+<p>不限时间和距离，随意跑</p>
+<p>点击地图下方的开始按钮开始记录。点击暂停可以暂停记录</p>
+<p>点击停止按钮停止记录</p>
+
+<h2>定时跑</h2>
+
+<p>你可以选择跑步时间，到时间后软件会发送通知提醒您。</p>
+<p>根据您手机的设置它可能通过铃声/震动/发光等方式提醒您。</p>
+
+<h2>定长跑</h2>
+
+<p>你可以选择跑步长度，到时间后软件会发送通知提醒您。</p>
+<p>根据您手机的设置它可能通过铃声/震动/发光等方式提醒您。</p>
+
+<h2>历史记录</h2>
+
+<p>你可以查看您的跑步历史记录。</p>
+
+
+
+<div class="ft">
+    &copy; <a href="http://m.colobu.com">跑酷健身</a>
+</div>
+</div>
+</body>
+</html>

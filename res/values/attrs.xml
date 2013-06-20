@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<declare-styleable name="AdView">
+<!-- 广告背景色 -->
+<attr name="backColor" format="color|reference" />
+<!-- 广告小文本颜色,针对纯文字广告的小字体 -->
+<attr name="textColor" format="color|reference" />
+<!-- 背景透明度(0~255),0为全透明,255为不透明,默认不透明 -->
+<attr name="backAlpha" format="integer|reference" />
+<!-- 标题文本颜色 -->
+<attr name="titleColor" format="color|reference"/>
+</declare-styleable>
+</resources>

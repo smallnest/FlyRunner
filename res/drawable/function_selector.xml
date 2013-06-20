@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/pressed_application_background_static" android:state_pressed="true"/>
+    <item android:drawable="@drawable/focused_application_background_static" android:state_window_focused="false"/>
+    <item android:drawable="@drawable/focused_application_background_static" android:state_window_focused="true"/>
+</selector>

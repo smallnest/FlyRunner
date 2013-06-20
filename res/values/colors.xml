@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="window_bg">#ffeef1f3</color>
+    <color name="title_bg">#ff54acea</color>
+    <color name="button_unselected">#ff54acea</color>
+    <color name="button_selected">#ff419de4</color>
+    <color name="scrollbar_tbumb_bg">#ffd5d5d5</color>
+        
+    <color name="list_item_bg">#fff0f4f6</color>
+    <color name="list_item_bg_focus">#ffe2e7eb</color>
+    <color name="panel_bg">#ffeeeeee</color>
+</resources>

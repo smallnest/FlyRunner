@@ -1,0 +1,15 @@
+<resources>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">8dp</dimen>
+    <dimen name="padding_large">16dp</dimen>
+
+    <dimen name="function_pic_width">61.0dip</dimen>
+    <dimen name="function_pic_height">61.0dip</dimen>
+    <dimen name="function_item_width">80.0dip</dimen>
+    <dimen name="function_padding_left">20.0dip</dimen>
+    <dimen name="function_padding_top">8.0dip</dimen>
+    <dimen name="function_horizontalSpacing">8.0dip</dimen>
+    <dimen name="function_verticalSpacing">0.0dip</dimen>
+    <dimen name="function_page_item_padding">3.0dip</dimen>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="check_update"
+        android:title="@string/check_update" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:disableDependentsState="false"
+        android:key="gps_filter"
+        android:title="@string/gps_filter" />
+
+    <PreferenceCategory
+        android:key="gps_config"
+        android:title="@string/gps_config" >
+        <EditTextPreference
+            android:defaultValue="100"
+            android:dependency="gps_filter"
+            android:dialogMessage="@string/max_accuracy_msg"
+            android:dialogTitle="@string/max_accuracy"
+            android:inputType="number"
+            android:key="max_accuracy"
+            android:summary="@string/max_accuracy_summary"
+            android:title="@string/max_accuracy" />
+        <EditTextPreference
+            android:defaultValue="13"
+            android:dependency="gps_filter"
+            android:dialogMessage="@string/max_speed_msg"
+            android:dialogTitle="@string/max_speed"
+            android:inputType="number"
+            android:key="max_speed"
+            android:summary="@string/max_speed_summary"
+            android:title="@string/max_speed" />
+        <EditTextPreference
+            android:defaultValue="1000"
+            android:dialogMessage="@string/check_interval_msg"
+            android:dialogTitle="@string/check_interval"
+            android:inputType="number"
+            android:key="check_interval"
+            android:summary="@string/check_interval_summary"
+            android:title="@string/check_interval" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

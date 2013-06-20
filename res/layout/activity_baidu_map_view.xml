@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<com.tencent.mobwin.AdView
+		xmlns:mobwin="http://mobwin.android.com/apk/res/com.colobu.flyrunner"
+		android:id="@+id/adview" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" mobwin:textColor="#ffff3333"
+		mobwin:titleColor="#ff00aa00" mobwin:backAlpha="180"></com.tencent.mobwin.AdView>
+	
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/info_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/adview"
+        android:background="@drawable/top_banner"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/btn_center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_btn_route" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/btn_center"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/run_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text=""
+                android:textColor="#FF0000"
+                android:textSize="40dp"
+                android:shadowColor="#aaaaaa"
+	    		android:shadowDx="1"
+	    		android:shadowDy="1"
+	    		android:shadowRadius="2"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/used_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text=" "
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/step_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:text=" "
+                    android:textColor="#ffffff"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.baidu.mapapi.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/info_bar"
+        android:layout_above="@+id/btn_control"
+        android:clickable="true" />
+
+
+
+
+    <LinearLayout
+        	android:id="@+id/btn_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bottom"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_start"
+            android:background="@drawable/button_blue" 
+            android:focusable="false"
+            android:layout_weight="1"
+            style="@style/ButtonText"
+            android:text="开始" />
+        
+        <Button
+            android:id="@+id/btn_stop"
+            android:background="@drawable/button_blue" 
+            android:focusable="false"
+            android:layout_weight="1"
+            style="@style/ButtonText"
+            android:text="停止" />
+	</LinearLayout>
+</RelativeLayout>

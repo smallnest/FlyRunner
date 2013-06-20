@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher android:id="@+id/viewswitcher_footer"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView android:textSize="16.0sp" android:textColor="#ff545454"
+		android:textColorHint="#ff000000" android:gravity="center"
+		android:focusable="false" android:layout_gravity="center"
+		android:id="@+id/textview_to_load_more" android:clickable="true"
+		android:layout_width="fill_parent" android:layout_height="55.0sp"
+		android:text="@string/load_next_items"
+		android:hapticFeedbackEnabled="true" />
+</ViewSwitcher>

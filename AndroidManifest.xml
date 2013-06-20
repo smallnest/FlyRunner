@@ -1,0 +1,119 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.colobu.flyrunner"
+    android:versionCode="5"
+    android:versionName="2.1.0" 
+    android:installLocation="auto">
+	
+    <supports-screens android:largeScreens="true"
+				android:normalScreens="true" android:smallScreens="true"
+				android:resizeable="true" android:anyDensity="true"/>
+    
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="8" />
+    
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE"></permission>
+    
+	<uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	
+    <application android:name=".FlyRunnerApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+		<meta-data
+			android:name="APP_ID"
+			android:value="2297958BB6B09F0B015E9384871A4299" />
+		<meta-data
+			android:name="APP_INTERVAL"
+			android:value="20" />
+		        
+        <!-- 
+        <activity
+            android:name=".SplashScreenActivity" android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_fly_runner"
+            android:theme="@style/Theme.Transparent"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->	
+		
+         <activity
+            android:name=".StaticSplashScreenActivity" android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_fly_runner"
+            android:theme="@style/Theme.FullScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         
+        <activity android:name=".HelpImageActivity" android:screenOrientation="portrait" 
+        	android:configChanges="orientation|keyboardHidden"
+        	android:theme="@style/Theme.FullScreen"> </activity>
+        <activity android:name=".FunctionActivity" android:screenOrientation="portrait" 
+        	android:configChanges="orientation|keyboardHidden"
+        	android:launchMode="singleTask"> </activity>
+        <activity android:name=".BaiduMapViewActivity" android:screenOrientation="sensor"
+            
+        	android:configChanges="orientation|keyboardHidden" />
+        <activity android:name=".HistoryMapViewActivity" android:screenOrientation="sensor"
+            android:theme="@style/Theme.FullScreen" 
+        	android:configChanges="orientation|keyboardHidden" />
+        <activity android:name=".WebMainActivity" android:screenOrientation="sensor" 
+        	android:configChanges="orientation|keyboardHidden"> </activity>
+        <activity android:name=".AdjustBaiduMapViewActivity" android:screenOrientation="sensor"
+        	android:configChanges="orientation|keyboardHidden" />
+        <activity android:name=".AboutActivity" android:screenOrientation="portrait" 
+        	android:configChanges="orientation|keyboardHidden"> </activity>
+        <activity android:name=".HistoryRecordActivity" android:screenOrientation="portrait" 
+        	android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".OfflineMapActivity" android:screenOrientation="portrait"
+        	android:configChanges="orientation|keyboardHidden" />              
+        <activity android:name=".SettingActivity" android:screenOrientation="portrait"
+        	android:configChanges="orientation|keyboardHidden" />              
+        <activity android:name=".HelpHtmlActivity" android:screenOrientation="portrait"
+        	android:configChanges="orientation|keyboardHidden" />              
+        
+		<activity
+			android:name="com.tencent.mobwin.MobinWINBrowserActivity"></activity>
+		
+        <activity android:configChanges="keyboardHidden|orientation"  android:name="com.weibo.net.ShareActivity">
+		</activity>
+		<activity android:configChanges="keyboardHidden|orientation"  android:name="com.tencent.weibo.webview.OAuthV1AuthorizeWebView">
+		</activity>
+       
+		<activity	android:name="com.renren.api.connect.android.AuthorizationHelper$BlockActivity"
+			android:theme="@android:style/Theme.Dialog">
+       </activity>
+		<activity android:name="com.renren.api.connect.android.status.StatusPubActivity"></activity>
+		 	    
+        <service android:name=".GpsService" android:exported="false">
+            
+        </service>  
+        <service android:name="com.baidu.location.f" android:enabled="true"
+			android:process=":remote" android:permission="android.permission.BAIDU_LOCATION_SERVICE">
+			<intent-filter>
+				<action android:name="com.baidu.location.service_v2.3"></action>
+			</intent-filter>
+		</service>
+    </application>
+	
+    
+</manifest>

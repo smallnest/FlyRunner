@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">跑酷健身</string>
+    <string name="title_activity_fly_runner">跑酷健身</string>
+    <string name="local_gps_service">GPS Service</string>
+    <string name="local_alarm_time">时间到</string>
+    <string name="local_alarm_length">已跑完设定的路程</string>
+    <string name="gps_filter">GPS精准度控制</string>
+    <string name="gps_config">GPS设置</string>
+    <string name="max_accuracy">最大允许精度</string>
+    <string name="max_accuracy_summary">单位为 米</string>
+    <string name="max_accuracy_msg">请选择GPS的最大精度，超过此精度的数据将被丢弃</string>
+    <string name="max_speed">最大允许速度</string>
+    <string name="max_speed_summary">单位为 米/秒</string>
+    <string name="max_speed_msg">请选择GPS最大允许速度,超过此速度的数据将被丢弃</string>
+    <string name="check_interval">位置监测间隔</string>
+    <string name="check_interval_summary">单位为 毫秒</string>
+    <string name="check_interval_msg">请设置GPS监测两点之间的间隔</string>
+    <string name="check_update">检查更新</string>
+    <string name="slogan">我精彩  我运动</string>
+    <string name="download_offline_map">下载</string>
+    <string name="load_next_items">加载下十条</string>
+    <string name="delete_offline_map">删除</string>
+    <string name="enable_gps">开启GPS</string>
+    <string name="gps_is_not_enabled">GPS还未开启，请开始GPS定位</string>
+</resources>

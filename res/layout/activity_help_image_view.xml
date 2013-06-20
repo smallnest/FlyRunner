@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/helpImageviewFlipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="top"
+        android:background="@color/window_bg" >
+
+        <ImageView
+            android:id="@+id/helpImageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/new_feature_1" />
+        <ImageView
+            android:id="@+id/helpImageView2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/new_feature_2" />
+        <ImageView
+            android:id="@+id/helpImageView3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/new_feature_3" />
+        <ImageView
+            android:id="@+id/helpImageView4"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/new_feature_4" />
+ 
+    </ViewFlipper>  
+    
